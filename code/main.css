@@ -1,5 +1,5 @@
 @media (min-width: 500px) {
-  .header-navbar {
+  .header-navbar a{
     display: flex;
   }
 
@@ -73,12 +73,14 @@ body {
   color: #8acfe5;
 }
 
-.container-pic {
+.container-hacker {
   width: 100%;
   height: 274px;
-  background-image: url(/media/image\ 2.jpg);
-  background-size: cover;
-  background-position: center;
+}
+
+.img-hacker {
+  width: 100%;
+  object-fit: cover;
 }
 
 .links-challenges {
@@ -86,8 +88,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 36px;
-  margin-bottom: 40px;
+  margin-top: 37px;
+  margin-bottom: 67px;
 }
 
 .btn-on-site {
@@ -128,9 +130,10 @@ body {
 .cont-quotes {
   display: flex;
   margin-left: 21px;
-  margin-right: 21px;
-  margin-bottom: 100px;
+  margin-right: 20px;
+  margin-bottom: 105px;
   height: 139px;
+  width: 439px;
 }
 
 .img-head {
@@ -157,21 +160,25 @@ body {
   margin-top: 10px;
 }
 
-.title-hori-scroll {
+.title-scrollbar {
   font-size: 32px;
   font-weight: 400;
   display: flex;
   justify-content: center;
 }
 
-.scroll-box {
+.scrollbar {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100vw;
   height: 460px;
-  margin-bottom: 0px;
   overflow-x: scroll;
+  gap: 37px;
+  margin-bottom: 10px;
 }
 
-.box {
+.box-one {
   width: 363px;
   height: 446px;
   display: flex;
@@ -183,15 +190,38 @@ body {
   margin-bottom: 0;
 }
 
+.box-two {
+  width: 363px;
+  height: 446px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  margin-right: 0px;
+  box-shadow: rgba(0, 0, 0, 0.147) 4px 4px 12px;
+  margin-bottom: 0;
+}
+
+.box-three {
+  width: 363px;
+  height: 446px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  margin-right: 0px;
+  box-shadow: rgba(0, 0, 0, 0.147) 4px 4px 12px;
+  margin-bottom: 0;
+}
+
 .img-box {
   border-radius: 8px 8px 0px 0px;
   object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.147) 4px 4px 12px;
 }
 
-.box-title {
+.title-box {
   font-size: 28px;
   font-weight: 400;
+  margin-top: 10px;
   margin-left: 14px;
   margin-bottom: 0px;
 }
@@ -234,8 +264,117 @@ body {
   border: none;
   border-radius: 4px;
   padding: 15px;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 160px;
 }
+
+.container-story {
+  height: 500px;
+  background-color: #011827;
+}
+
+.text-story {
+  height: 234px;
+  width: 439px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  color: white;
+  padding-top: 50px;
+  margin-left: 21px;
+}
+
+.button-story {
+  width: 308px;
+  height: 66px;
+  margin-top: 14px;
+  margin-bottom: 91px;
+  margin-left: 90px;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #8acfe5;
+  background: #011827;
+  border-radius: 4px;
+  border: 2px #8acfe5;
+  border-style: solid;
+}
+
+.container-book {
+  height: fit-content;
+  width: 100vw;
+}
+
+.img-twoppl {
+  width: 100%;
+  object-fit: cover;
+}
+
+.book-onsite {
+  margin-top: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0;
+}
+
+.title-book {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.p-book {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.button-book {
+  background-color: #E3170A;
+  color: white;
+  font-size: 24px;
+  width: 308px;
+  height: 66px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 35px;
+  margin-bottom: 64px;
+}
+
+.container-challenges {
+  height: fit-content;
+  width: 100vw;
+}
+
+.img-woman {
+  width: 100%;
+  object-fit: cover;
+}
+
+.title-chall {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.p-chall {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.button-book {
+  background-color: #E3170A;
+  color: white;
+  font-size: 24px;
+  width: 308px;
+  height: 66px;
+  border-radius: 4px;
+  border: none;
+  margin-top: 35px;
+  margin-bottom: 64px;
+}
+
+
+
 
 
