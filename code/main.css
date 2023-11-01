@@ -81,7 +81,9 @@ body {
 .header-links:hover {
   color: #8acfe5;
 }
+/* -- MAIN -- */
 
+/* -- SEC-HERO -- */
 .container-hacker {
   width: 100%;
   height: 284px;
@@ -114,7 +116,8 @@ body {
   object-fit: cover;
 }
 
-.container-links {
+/* -- SEC-BUTTONS -- */
+.container-buttons {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -123,22 +126,23 @@ body {
   margin-bottom: 67px;
 }
 
-.btn-on-site {
-  display: flex;
+.btn-online {
+  display: none;
   justify-content: center;
   align-items: center;
   width: 308px;
   height: 66px;
+  margin-right: 17px;
   font-size: 24px;
   font-weight: 700;
-  color: #011827;
-  background-color: #8acfe5;
+  color: white;
+  background-color: #e3170a;
   border-radius: 5px;
   border: none;
 }
 
-.btn-online {
-  display: none;
+.btn-on-site {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 308px;
@@ -158,44 +162,92 @@ body {
   color: #36769d;
 }
 
+@media (min-width: 900px) {
+  .container-buttons {
+    flex-direction: row;
+    margin-top: -35px;
+  }
+
+  .btn-online {
+    display: flex;
+  }
+
+  .link-online {
+    display: none;
+  }
+}
+
+/* -- SEC-QUOTES -- */
 .cont-quotes {
   display: flex;
-  margin-left: 21px;
-  margin-right: 20px;
+  flex-direction: row;
+  justify-content: center;
   margin-bottom: 105px;
-  height: 139px;
-  width: 439px;
+}
+.quote-one {
+  display: flex;
+}
+
+.quote-two {
+  display: none;
+  justify-content: center;
 }
 
 .img-head {
   width: 72px;
   height: 72px;
+  margin-left: 20px;
   border-radius: 50%;
   margin-right: 20px;
 }
 
 .cont-quotes-text {
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
-.quote {
+.quote-text {
   font-size: 24px;
   font-style: italic;
   font-weight: 400;
   margin: 0;
 }
 
-.p-quote {
+.quote-name {
   font-size: 18px;
   font-weight: 400;
   margin-top: 10px;
 }
 
+@media (min-width: 900px) {
+  .cont-quotes {
+    max-height: 141px;
+    justify-content: center;
+    margin-top: 102px;
+    margin-bottom: 82px;
+  }
+
+  .quote-one {
+    width: 520px;
+  }
+  .quote-two {
+    display: flex;
+    width: 522px;
+  }
+}
+
+@media (min-width: 1078px) {
+  .img-head {
+    margin-left: 0px;
+  }
+}
+
+/* -- SEC-SCROLLBAR -- */
 .title-scrollbar {
   font-size: 32px;
   font-weight: 400;
   display: flex;
   justify-content: center;
+  margin-bottom: 44px;
 }
 
 .scrollbar {
@@ -207,16 +259,6 @@ body {
   overflow-x: scroll;
   gap: 37px;
   margin-bottom: 10px;
-}
-
-.scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
 }
 
 .box-one {
@@ -298,7 +340,7 @@ body {
 
 .box-button {
   width: 179px;
-  background-color: #E3170A;
+  background-color: #e3170a;
   color: white;
   font-size: 16px;
   font-weight: 700;
@@ -309,23 +351,72 @@ body {
   margin-left: 160px;
 }
 
+@media (min-width: 1280px) {
+  .scrollbar {
+    justify-content: center;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    gap: 42px;
+  }
+
+  .box-one {
+    margin-left: 0px;
+  }
+
+  .title-scrollbar {
+    margin-bottom: 87px;
+  }
+
+  .scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* -- SEC-BUTTONS -- */
+.container-buttons-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 37px;
+  margin-bottom: 67px;
+}
+
+@media (min-width: 900px) {
+  .container-buttons-two {
+    flex-direction: row;
+    margin-bottom: 87px;
+  }
+
+  .btn-online {
+    display: flex;
+  }
+
+  .link-online {
+    display: none;
+  }
+}
+/* -- SEC-STORY -- */
 .container-story {
   height: 500px;
   background-color: #011827;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .text-story {
   height: 234px;
-  width: 439px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  max-width: 632px;
   font-size: 28px;
   font-weight: 400;
   color: white;
   padding-top: 50px;
-  margin-left: 21px;
 }
 
 .button-story {
@@ -333,7 +424,6 @@ body {
   height: 66px;
   margin-top: 14px;
   margin-bottom: 91px;
-  margin-left: 90px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -344,100 +434,116 @@ body {
   border-style: solid;
 }
 
-.container-book {
-  height: fit-content;
-  width: 100vw;
+@media (min-width: 480px) {
+  .text-story {
+    width: 439px;
+  }
 }
 
-.img-twoppl {
-  width: 100%;
-  object-fit: cover;
+@media (min-width: 900px) {
+  .text-story {
+    width: 639px;
+  }
+
+  .button-story {
+    margin-bottom: 142px;
+  }
 }
 
-.book-onsite {
-  margin-top: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 0;
-}
-
-.title-book {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.p-book {
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.button-book {
-  background-color: #E3170A;
-  color: white;
-  font-size: 24px;
-  width: 308px;
-  height: 66px;
-  border-radius: 4px;
-  border: none;
-  margin-top: 35px;
-  margin-bottom: 64px;
-}
-
-.container-challenges {
-  height: fit-content;
-  width: 100vw;
-}
-
-.img-woman {
-  width: 100%;
-  object-fit: cover;
-}
-
-.challenges {
-  margin-top: 0;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 0;
-}
-
-.title-chall {
-  font-size: 32px;
-  font-weight: 700;
-}
-
-.p-chall {
-  font-size: 24px;
-  font-weight: 400;
-}
-
-.button-chall {
-  background-color: #E3170A;
-  color: white;
-  font-size: 24px;
-  width: 308px;
-  height: 66px;
-  border-radius: 4px;
-  border: none;
-  margin-top: 35px;
-  margin-bottom: 98px;
-}
-
-.footer {
-  background-color: #011827;
-  height: fit-content;
+/* -- PLAY -- */
+.play-container-one {
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin-bottom: 44px;
+}
+
+.play-container-two {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 78px;
+}
+
+.img-play-one {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.img-play-two {
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.content-play-one {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.content-play-two {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.play-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 1px;
+}
+
+.play-p {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 49px;
+}
+
+.button-see {
+  width: 308px;
+  height: 66px;
+  background: #E3170A;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+
+.button-book {
+  width: 308px;
+  height: 66px;
+  background: #E3170A;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  border-radius: 4px;
+  border: none;
+}
+
+/* -- FOOTER -- */
+.footer {
+  background-color: #011827;
+  display: flex;
+  justify-content: center;
 }
 
 .container-footer {
-  height: 566px;
-  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
   margin-left: 22px;
+  margin-top: 64px;
 }
 
 .footer-title-box {
-  margin-bottom: 0px;
+  color: white;
 }
 
 .footer-title {
@@ -450,31 +556,40 @@ body {
   font-size: 18px;
   font-weight: 400;
   color: white;
+  margin-right: 20px;
+}
+
+.footer-link-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-site-map {
   display: flex;
   flex-direction: column;
   margin: 0px;
-
-}
-
-.footer-play {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
 }
 
 .footer-follow-us {
   display: flex;
   flex-direction: column;
   margin: 0px;
+  margin-bottom: 80px;
 }
 
 .footer-link-title {
   font-size: 18px;
   font-weight: 700;
   color: white;
+}
+
+.link-break {
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
 }
 
 .footer-links {
@@ -484,12 +599,31 @@ body {
   text-decoration: none;
 }
 
+@media (min-width: 900px) {
+  .footer {
+    flex-direction: row;
+  }
 
+  .container-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 146px;
+    margin-right: 200px;
+    margin-bottom: 174px;
+    margin-left: 108px;
+  }
 
+  .footer-title-box {
+    width: 416px;
+  }
 
+  .footer-link-box {
+    flex-direction: row;
+  }
 
+  .footer-site-map {
+    margin-left: 232px;
+    margin-right: 143px;
+  }
 
-
-
-
-
+}
