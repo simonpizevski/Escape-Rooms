@@ -507,7 +507,7 @@ body {
 .button-see {
   width: 308px;
   height: 66px;
-  background: #E3170A;
+  background: #e3170a;
   font-size: 24px;
   font-weight: 700;
   color: white;
@@ -518,7 +518,7 @@ body {
 .button-book {
   width: 308px;
   height: 66px;
-  background: #E3170A;
+  background: #e3170a;
   font-size: 24px;
   font-weight: 700;
   color: white;
@@ -560,7 +560,6 @@ body {
 }
 
 .footer-link-box {
-  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -613,6 +612,10 @@ body {
     margin-left: 108px;
   }
 
+  .footer-title-p {
+    margin-right: 0px;
+  }
+
   .footer-title-box {
     width: 416px;
   }
@@ -622,8 +625,9 @@ body {
   }
 
   .footer-site-map {
-    margin-left: 232px;
-    margin-right: 143px;
+    margin-right: 141px;
   }
-
 }
+
+
+
