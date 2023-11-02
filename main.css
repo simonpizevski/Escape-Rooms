@@ -46,8 +46,6 @@ body {
   margin-top: 25px;
 }
 
-
-
 .header-navbar {
   display: flex;
   display: none;
@@ -56,11 +54,6 @@ body {
   justify-content: space-between;
   margin-bottom: 22px;
   width: 60%;
-}
-
-
-@media (min-width: 900px) {
-  
 }
 
 .header-navbar a {
