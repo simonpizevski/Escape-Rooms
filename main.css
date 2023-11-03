@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/roboto');
+
 html,
 body {
   margin: 0;
@@ -5,10 +7,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
-}
-
-* {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .header {
@@ -52,6 +51,7 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  margin-top: 25px;
   margin-bottom: 22px;
   width: 60%;
 }
@@ -157,6 +157,7 @@ body {
   height: 66px;
   font-size: 24px;
   font-weight: 700;
+  
   color: #011827;
   background-color: #8acfe5;
   border-radius: 5px;
@@ -226,12 +227,18 @@ body {
   margin-top: 10px;
 }
 
+@media (min-width: 600px) {
+  .quote-one {
+    width: 522px;
+  }
+}
+
 @media (min-width: 900px) {
   .cont-quotes {
     max-height: 141px;
     justify-content: center;
     margin-top: 102px;
-    margin-bottom: 82px;
+    margin-bottom: 102px;
   }
 
   .quote-one {
@@ -270,7 +277,7 @@ body {
   margin-bottom: 10px;
 }
 
-.box-one {
+.card.card-first {
   width: 363px;
   height: 446px;
   display: flex;
@@ -282,7 +289,7 @@ body {
   margin-bottom: 0;
 }
 
-.box-two {
+.card {
   width: 363px;
   height: 446px;
   display: flex;
@@ -293,18 +300,7 @@ body {
   margin-bottom: 0;
 }
 
-.box-three {
-  width: 363px;
-  height: 446px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 8px;
-  margin-right: 0px;
-  box-shadow: rgba(0, 0, 0, 0.147) 4px 4px 12px;
-  margin-bottom: 0;
-}
-
-.img-box {
+.img-card {
   border-radius: 8px 8px 0px 0px;
   object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.147) 4px 4px 12px;
@@ -348,7 +344,8 @@ body {
 }
 
 .box-button {
-  width: 179px;
+  min-width: 179px;
+  max-width: 179px;
   background-color: #e3170a;
   color: white;
   font-size: 16px;
@@ -356,8 +353,9 @@ body {
   border: none;
   border-radius: 4px;
   padding: 15px;
-  margin-top: 10px;
-  margin-left: 160px;
+  margin-top: 5px;
+  margin-left: 165px;
+  max-height: 44px;
 }
 
 @media (min-width: 1280px) {
@@ -366,9 +364,10 @@ body {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
     gap: 42px;
+    margin-bottom: 70px;
   }
 
-  .box-one {
+  .card.card-first {
     margin-left: 0px;
   }
 
@@ -405,6 +404,7 @@ body {
     display: none;
   }
 }
+
 /* -- SEC-STORY -- */
 .container-story {
   height: 500px;
@@ -426,11 +426,12 @@ body {
   font-weight: 400;
   color: white;
   padding-top: 50px;
+  margin-bottom: 25px;
 }
 
 .button-story {
   width: 308px;
-  height: 66px;
+  min-height: 66px;
   margin-top: 14px;
   margin-bottom: 91px;
   font-family: Roboto, sans-serif;
@@ -452,6 +453,8 @@ body {
 @media (min-width: 900px) {
   .text-story {
     width: 639px;
+    margin-bottom: 0px;
+    margin-top: 30px;
   }
 
   .button-story {
@@ -713,6 +716,7 @@ body {
 @media (min-width: 900px) {
   .footer {
     flex-direction: row;
+    height: 467px;
   }
 
   .container-footer {
