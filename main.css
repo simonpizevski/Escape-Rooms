@@ -134,7 +134,7 @@ body {
   margin-bottom: 67px;
 }
 
-.btn-online {
+.button-online {
   display: none;
   justify-content: center;
   align-items: center;
@@ -149,7 +149,7 @@ body {
   border: none;
 }
 
-.btn-on-site {
+.button-on-site {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,7 +177,7 @@ body {
     margin-top: -35px;
   }
 
-  .btn-online {
+  .button-online {
     display: flex;
   }
 
@@ -306,7 +306,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.147) 4px 4px 12px;
 }
 
-.title-box {
+.card-title {
   font-size: 28px;
   font-weight: 400;
   margin-top: 10px;
@@ -404,7 +404,7 @@ body {
     margin-bottom: 87px;
   }
 
-  .btn-online {
+  .button-online {
     display: flex;
   }
 
@@ -643,7 +643,7 @@ body {
   margin-top: 64px;
 }
 
-.footer-title-box {
+.footer-card-title {
   color: white;
 }
 
@@ -718,7 +718,7 @@ body {
     margin-right: 0px;
   }
 
-  .footer-title-box {
+  .footer-card-title {
     width: 416px;
   }
 
