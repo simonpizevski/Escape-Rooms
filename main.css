@@ -186,7 +186,7 @@ body {
   }
 }
 
-/* -- SEC-QUOTES -- */
+                            /* -- SEC-QUOTES -- */
 .cont-quotes {
   display: flex;
   flex-direction: row;
@@ -257,7 +257,7 @@ body {
   }
 }
 
-/* -- SEC-SCROLLBAR -- */
+                           /* -- SEC-SCROLLBAR -- */
 .title-scrollbar {
   font-size: 30px;
   font-weight: 400;
@@ -343,7 +343,7 @@ body {
   margin-right: 15px;
 }
 
-.box-button {
+.card-button {
   min-width: 179px;
   max-width: 179px;
   height: 44px;
@@ -356,8 +356,6 @@ body {
   border-radius: 4px;
   margin-left: 165px;
   margin-bottom: 10px;
-  
-  
 }
 
 @media (min-width: 480px) {
@@ -388,7 +386,7 @@ body {
   }
 }
 
-/* -- SEC-BUTTONS -- */
+                           /* -- SEC-BUTTONS -- */
 .container-buttons-two {
   display: flex;
   flex-direction: column;
@@ -413,7 +411,7 @@ body {
   }
 }
 
-/* -- SEC-STORY -- */
+                           /* -- SEC-STORY -- */
 .container-story {
   height: 500px;
   width: 100%;
@@ -471,7 +469,7 @@ body {
   }
 }
 
-/* -- PLAY -- */
+                           /* -- SEC-PLAY -- */
 .play-container-one {
   width: 100%;
   display: flex;
@@ -626,7 +624,7 @@ body {
   }
 }
 
-/* -- FOOTER -- */
+                           /* -- FOOTER -- */
 .footer {
   height: fit-content;
   background-color: #011827;
