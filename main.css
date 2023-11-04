@@ -82,7 +82,7 @@ body {
                                                 /* -- MAIN -- */
 
 /* -- SEC-HERO -- */
-.container-hacker {
+.hero {
   width: 100%;
   height: 274px;
   background-image: url(media/hacker4x.png);
@@ -90,32 +90,32 @@ body {
 }
 
 @media (min-width: 750px) {
-  .container-hacker {
+  .hero {
     height: 352px;
     
   }
 }
 @media (min-width: 900px) {
-  .container-hacker {
+  .hero {
     height: 400px;
     background-image: url(media/hacker3x.png);
     
   }
 }
 @media (min-width: 1000px) {
-  .container-hacker {
+  .hero {
     height: 440px;
     background-image: url(media/hacker2x.png);
   }
 }
 @media (min-width: 1280px) {
-  .container-hacker {
+  .hero {
     height: 468px;
     background-image: url(media/hacker2x.png);
   }
 }
 @media (min-width: 1920px) {
-  .container-hacker {
+  .hero {
     height: 600px;
   }
 }
