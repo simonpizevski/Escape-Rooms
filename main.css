@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/roboto');
+@import url("https://fonts.cdnfonts.com/css/roboto");
 
 html,
 body {
@@ -7,7 +7,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
@@ -79,7 +79,7 @@ body {
   }
 }
 
-                                                /* -- MAIN -- */
+/* -- MAIN -- */
 
 /* -- SEC-HERO -- */
 .hero {
@@ -92,14 +92,12 @@ body {
 @media (min-width: 750px) {
   .hero {
     height: 352px;
-    
   }
 }
 @media (min-width: 900px) {
   .hero {
     height: 400px;
     background-image: url(media/hacker3x.png);
-    
   }
 }
 @media (min-width: 1000px) {
@@ -157,7 +155,7 @@ body {
   height: 66px;
   font-size: 24px;
   font-weight: 700;
-  
+
   color: #011827;
   background-color: #8acfe5;
   border-radius: 5px;
@@ -186,7 +184,7 @@ body {
   }
 }
 
-                            /* -- SEC-QUOTES -- */
+/* -- SEC-QUOTES -- */
 .cont-quotes {
   display: flex;
   flex-direction: row;
@@ -257,7 +255,7 @@ body {
   }
 }
 
-                           /* -- SEC-SCROLLBAR -- */
+/* -- SEC-SCROLLBAR -- */
 .title-scrollbar {
   font-size: 30px;
   font-weight: 400;
@@ -367,7 +365,7 @@ body {
 @media (min-width: 1280px) {
   .scrollbar {
     justify-content: center;
-    -ms-overflow-style: none; 
+    -ms-overflow-style: none;
     scrollbar-width: none;
     gap: 42px;
     margin-bottom: 70px;
@@ -386,7 +384,7 @@ body {
   }
 }
 
-                           /* -- SEC-BUTTONS -- */
+/* -- SEC-BUTTONS -- */
 .container-buttons-two {
   display: flex;
   flex-direction: column;
@@ -411,7 +409,7 @@ body {
   }
 }
 
-                           /* -- SEC-STORY -- */
+/* -- SEC-STORY -- */
 .container-story {
   height: 500px;
   width: 100%;
@@ -469,7 +467,7 @@ body {
   }
 }
 
-                           /* -- SEC-PLAY -- */
+/* -- SEC-PLAY -- */
 .play-container-one {
   width: 100%;
   display: flex;
@@ -485,12 +483,10 @@ body {
 }
 
 .img-play-one {
-  
   object-fit: cover;
 }
 
 .img-play-two {
-  
   object-fit: cover;
 }
 
@@ -545,12 +541,11 @@ body {
 
 @media (min-width: 700px) {
   .img-play-one {
-   max-height: 489px;
+    max-height: 489px;
   }
 
   .img-play-two {
     max-height: 489px;
-
   }
 }
 @media screen and (min-width: 900px) {
@@ -558,7 +553,7 @@ body {
     flex-direction: row;
     margin-bottom: 0px;
   }
-  
+
   .play-container-two {
     flex-direction: row-reverse;
     margin-bottom: 116px;
@@ -590,24 +585,20 @@ body {
     max-height: 1000px;
     width: 50%;
     max-width: 50%;
-
   }
-
 }
 
 @media screen and (min-width: 1280px) {
   .play-container-one {
-    
     max-height: 700px;
     flex-direction: row;
     margin-bottom: 0px;
   }
-  
+
   .play-container-two {
     max-height: 700px;
     flex-direction: row-reverse;
     margin-bottom: 183px;
-    
   }
 
   .content-play-one {
@@ -624,7 +615,7 @@ body {
   }
 }
 
-                           /* -- FOOTER -- */
+/* -- FOOTER -- */
 .footer {
   height: fit-content;
   background-color: #011827;
@@ -760,6 +751,3 @@ body {
     margin-right: 400px;
   }
 }
-
-
-
