@@ -6,7 +6,6 @@ document.getElementById("btnOpen").addEventListener("click", function()
     
     containerMobilemenu.style.display = "block";
     bgMobilemenu.style.display = "flex";
-    console.log("hello")
 
     document.querySelector("html").style.overflow = "hidden";
 })
@@ -18,7 +17,6 @@ document.getElementById("btnClose").addEventListener("click", function()
     
     containerMobilemenu.style.display = "none";
     bgMobilemenu.style.display = "none";
-    console.log("hello")
 
     document.querySelector("html").style.overflow = "auto";
 })
