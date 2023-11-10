@@ -4,27 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>[ESC] Escape Rooms</title>
-    <link rel="icon" type="image/png" href="/media/logo.png">
+    <link rel="icon" type="image/png" href="/media/logo.png" />
     <link rel="stylesheet" href="main.css" />
     <link href="https://fonts.cdnfonts.com/css/roboto" rel="stylesheet" />
   </head>
   <body>
-
     <header class="header">
       <div class="header-container">
         <img src="media/logo.png" alt="header-logo" class="header-logo" />
         <h1 class="header-title">Hacker Escape Rooms</h1>
+        <button class="button-open" id="btnOpen" type="submit">
+          <img class="" src="media/menubutton.png" alt="" />
+        </button>
       </div>
       <nav class="header-navbar">
-        <a href="">Play online</a>
-        <a href="">Play on-site</a>
-        <a href="">The story</a>
-        <a href="">Contact us</a>
+        <a class="nav-links" href="">Play online</a>
+        <a class="nav-links" href="">Play on-site</a>
+        <a class="nav-links" href="">The story</a>
+        <a class="nav-links" href="">Contact us</a>
       </nav>
     </header>
 
     <main>
       <section class="sec-hero">
+        <div class="container-mobilemenu" id="contMM">
+          <div class="bg-mobilemenu" id="bgMM">
+            <button class="button-close" id="btnClose">
+              <img src="media/close.png" alt="" />
+            </button>
+            <a class="nav-links" href="">Play online</a>
+            <a class="nav-links" href="">Play on-site</a>
+            <a class="nav-links" href="">The story</a>
+            <a class="nav-links" href="">Contact us</a>
+          </div>
+        </div>
+        
+
         <div class="hero"></div>
       </section>
       <section class="sec-buttons">
@@ -37,7 +52,11 @@
       <section class="sec-quotes">
         <div class="cont-quotes">
           <div class="quote-one">
-            <img class="img-head" src="media/profile.png" alt="" />
+            <img
+              class="img-head"
+              src="media/profile.png"
+              alt="profile picture of person who said the quote"
+            />
             <div class="cont-quotes-text">
               <h2 class="quote-text">
                 This is a quote about how amazing this place is and how much fun
@@ -47,7 +66,11 @@
             </div>
           </div>
           <div class="quote-two">
-            <img class="img-head" src="media/profile.png" alt="" />
+            <img
+              class="img-head"
+              src="media/profile.png"
+              alt="profile picture of person who said the quote"
+            />
             <div class="cont-quotes-text">
               <h2 class="quote-text">
                 This is a quote about how amazing this place is and how much fun
@@ -62,7 +85,11 @@
         <h2 class="title-scrollbar">Popular challenges right now</h2>
         <div class="scrollbar">
           <div class="card card-first">
-            <img class="img-card" src="media/hacker3.png" alt="" />
+            <img
+              class="img-card"
+              src="media/hacker3.png"
+              alt="picture of a person hacking"
+            />
             <div class="card-bottom">
               <h2 class="card-title">Title of room (on-site)</h2>
               <div class="bottom-stars">
@@ -81,7 +108,11 @@
             <button class="card-button">Book this room</button>
           </div>
           <div class="card">
-            <img class="img-card" src="media/hacker3.png" alt="" />
+            <img
+              class="img-card"
+              src="media/hacker3.png"
+              alt="picture of a person hacking"
+            />
             <div class="card-bottom">
               <h2 class="card-title">Title of room (on-site)</h2>
               <div class="bottom-stars">
@@ -100,7 +131,11 @@
             <button class="card-button">Book this room</button>
           </div>
           <div class="card">
-            <img class="img-card" src="media/hacker3.png" alt="" />
+            <img
+              class="img-card"
+              src="media/hacker3.png"
+              alt="picture of a person hacking"
+            />
             <div class="card-bottom">
               <h2 class="card-title">Title of room (on-site)</h2>
               <div class="bottom-stars">
@@ -140,7 +175,12 @@
       <section class="sec-play">
         <div class="container-play">
           <div class="play-container-one">
-            <img class="img-play-one" src="media/twoppl.png" alt="" />
+            <img
+              class="img-play-one"
+              src="media/twoppl.png"
+              alt="picture of a co-worker helping 
+            with a task"
+            />
             <div class="content-play-one">
               <h2 class="play-title">
                 Play with your friends or build your team stronger at work
@@ -153,7 +193,11 @@
             </div>
           </div>
           <div class="play-container-two">
-            <img class="img-play-two" src="media/woman.png" alt="" />
+            <img
+              class="img-play-two"
+              src="media/woman.png"
+              alt="woman sitting by her computer working"
+            />
             <div class="content-play-two">
               <h2 class="play-title">
                 Play online or visit our venue for one of our 25 escape rooms
@@ -197,7 +241,6 @@
         </div>
       </div>
     </footer>
-
   </body>
   <script src="main.js"></script>
 </html>
